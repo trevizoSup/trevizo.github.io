@@ -124,9 +124,7 @@
 		<input id="nome" type="text">
 		<br>
 		<br>
-		<span>Marketplace(Loja)</span>
-		<br>
-		<input id="marketplace" type="text">
+		
 	
 
 	<div id="texto">
@@ -155,7 +153,6 @@
 
 			}else{
 			nome = document.getElementById("nome").value;
-			mkt = document.getElementById("marketplace").value;
 			textarea = document.getElementById("area_de_texto").value;
 			pedido = document.getElementById("pedido").value;
 			numero = document.getElementById("telefone").value;
@@ -171,11 +168,11 @@
 		function exemplo()
 		{
 			nome = document.getElementById("nome").value;
-			mkt = document.getElementById("marketplace").value;
+			
 			textarea = document.getElementById("area_de_texto").value;
 
 			numero = document.getElementById("telefone").value;
-			texto = "Olá, " + nome + ", Sou da Trevizo Suplementos. Entro em contato referente a sua compra via " + mkt  + textarea
+			texto = "Olá " + nome + ", Sou da Trevizo Suplementos. Entro em contato referente ao pedido: "  + textarea
 			
 			nome.value = "";
 			document.getElementById("exemplo").innerText = texto;
